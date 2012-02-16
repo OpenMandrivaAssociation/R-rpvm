@@ -7,7 +7,7 @@ Release:          1
 Summary:          R interface to PVM (Parallel Virtual Machine)
 Group:            Sciences/Mathematics
 License:          GPL version 2 or newer
-URL:              None
+URL:              http://cran.r-project.org/web/packages/rpvm/index.html
 Source0:          http://cran.r-project.org/src/contrib/Archive/rpvm/rpvm_1.0.2.tar.gz
 Requires:         R-rsprng 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
