@@ -2,13 +2,14 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.0.2
+Epoch:            1
+Version:          1.0_4
 Release:          1
 Summary:          R interface to PVM (Parallel Virtual Machine)
 Group:            Sciences/Mathematics
-License:          GPL version 2 or newer
-URL:              http://cran.r-project.org/web/packages/rpvm/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/rpvm/rpvm_1.0.2.tar.gz
+License:          GPL (>= 2)
+URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-4.tar.gz
 Requires:         R-rsprng 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    R-rsprng 
@@ -26,7 +27,6 @@ Provides interface to PVM APIs, and examples and documentation for its
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{rlibdir}
 %{_bindir}/R CMD INSTALL -l %{buildroot}%{rlibdir} %{packname}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
