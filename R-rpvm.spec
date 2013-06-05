@@ -3,13 +3,13 @@
 
 Name:             R-%{packname}
 Epoch:            1
-Version:          1.0_4
+Version:          1.0.4
 Release:          1
 Summary:          R interface to PVM (Parallel Virtual Machine)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-4.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/Archive/rpvm/rpvm_1.0-4.tar.gz
 Requires:         R-rsprng 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    R-rsprng 
@@ -59,4 +59,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 774639
 - Import R-rpvm
 - Import R-rpvm
+
 
