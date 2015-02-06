@@ -4,7 +4,7 @@
 Name:             R-%{packname}
 Epoch:            1
 Version:          1.0_4
-Release:          2
+Release:          3
 Summary:          R interface to PVM (Parallel Virtual Machine)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
